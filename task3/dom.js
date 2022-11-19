@@ -18,7 +18,7 @@ item[0].style.fontWeight='bold';
 
 var items = document.getElementsByClassName('list-group-item');
 console.log(items)
-items[2].style.backgroundColor = 'green';
+//items[2].style.backgroundColor = 'green';
 
 for (let i=0;i<items.length;i++) {
     items[i].style.fontWeight='bold';
@@ -33,11 +33,22 @@ for (let i=0;i<li.length;i++) {
     li[i].style.color='red';
 }
 
-var secondItem = document.querySelector('.list-group-item:nth-child(2)');
-secondItem.style.backgroundColor='green';
+//var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+//secondItem.style.backgroundColor='green';
 
-var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
-thirdItem.style.display='None';
+//var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+//thirdItem.style.visibility='hidden';
+
+var titles = document.querySelectorAll('.list-group-item');
+//titles[1].style.color = 'green'
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+
+for (var i=0;i<odd.length;i++) {
+    odd[i].style.backgroundColor = 'green';
+}
+
+
 
 
 
