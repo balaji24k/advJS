@@ -33,3 +33,13 @@ for (let i=0;i<li.length;i++) {
     li[i].style.color='red';
 }
 
+var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.backgroundColor='green';
+
+var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+thirdItem.style.display='None';
+
+
+
+
+
