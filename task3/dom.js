@@ -1,4 +1,5 @@
 console.log(document.URL);
+console.log("hello")
 console.log(document.title);
 
 document.title="myList";
