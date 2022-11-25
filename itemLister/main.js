@@ -9,6 +9,8 @@ itemList.addEventListener('click', removeItem);
 // Filter event
 filter.addEventListener('keyup', filterItems);
 
+itemList.addEventListener('click', editItem);
+
 // Add item
 function addItem(e){
   e.preventDefault();
@@ -34,6 +36,11 @@ function addItem(e){
 
   // Append button to li
   li.appendChild(deleteBtn);
+
+  var editBtn = document.createElement('button');
+  editBtn.className = 'btn btn-sm float-right editBtn';
+  editBtn.appendChild(document.createTextNode('EDIT'));
+  li.appendChild(editBtn);
 
   // Append li to list
   itemList.appendChild(li);
@@ -64,4 +71,4 @@ function filterItems(e){
       item.style.display = 'none';
     }
   });
-}
+} 
